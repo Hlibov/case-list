@@ -1,0 +1,73 @@
+//------------------- box-sizing for all element
+* {
+	box-sizing: border-box;
+	// max-height to all
+	max-height: 1000000px;
+
+	&:after,
+	&:before {
+		box-sizing: inherit;
+	}
+}
+
+//------------------- transition none when resize
+.resize-active {
+	transition: none !important;
+
+	*,
+	*:before,
+	*:after {
+		transition: inherit !important;
+	}
+}
+
+//------------------- container
+.container {
+	width: 100%;
+	max-width: 1024px;
+	margin: 0 auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+//------------------- footer to bottom
+html,
+body {
+	height: 100%;
+}
+
+.wrapper {
+	height: 100vh;
+	padding: 20px 0;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	min-height: 100%;
+	width: 100%;
+	position: relative;
+	overflow: auto;
+}
+
+.bg-dark {
+	background-color: black;
+}
+
+.bg-light {
+	background-color: white;
+}
+
+.border-r {
+	&--md {
+		border-radius: 20px;
+	}
+}
+
+.text-center {
+	text-align: center;
+}
+
+// fix bug on some flex block (see example with slider swiper)
+.main,
+.header,
+.footer {
+	min-width: 0;
+}

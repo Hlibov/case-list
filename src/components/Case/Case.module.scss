@@ -1,0 +1,28 @@
+.case {
+	padding: 10px 0;
+
+	&__wrap {
+		padding: 10px 20px;
+		border-radius: 20px;
+		background: rgb(255, 202, 127);
+		background: linear-gradient(
+			0deg,
+			rgba(255, 202, 127, 1) 17%,
+			rgba(174, 179, 87, 1) 64%,
+			rgba(109, 160, 54, 1) 100%
+		);
+	}
+
+	&__title {
+	}
+
+	&__text {
+	}
+
+	&__btn-del {
+	}
+
+	&__btn {
+		background-color: green;
+	}
+}

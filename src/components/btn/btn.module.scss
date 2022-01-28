@@ -1,0 +1,42 @@
+.btn {
+	padding: 12px 15px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px;
+	border-radius: 15px;
+	margin-top: 13px;
+	transition: color 0.4s linear, background-color 0.4s linear, border-color 0.4s linear,
+		transform 0.4s linear;
+
+	&_color_successful {
+		background-color: green;
+		color: white;
+		border: 1px solid white;
+
+		&:hover {
+			color: green;
+			background-color: white;
+			border-color: green;
+			transform: scale(1.05) rotate(-1deg);
+		}
+	}
+
+	&_color_danger {
+		background-color: red;
+		color: white;
+		border: 1px solid white;
+
+		&:hover {
+			color: red;
+			background-color: white;
+			border-color: red;
+			transform: scale(1.05) rotate(-1deg);
+		}
+	}
+
+	&_sm {
+		padding: 3px 8px;
+		font-size: 16px;
+	}
+}
